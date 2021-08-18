@@ -1,0 +1,10 @@
+operator_manifests:
+  manifests_dir: manifests
+  enable_digest_pinning: true
+  enable_repo_replacements: true
+  enable_registry_replacements: true
+  repo_replacements:
+    - registry: registry.redhat.io
+      package_mappings:
+        fuse-console-openshift-rhel-8-container: fuse7
+        fuse-console-rhel-8-operator-container: fuse7
